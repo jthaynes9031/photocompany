@@ -1,0 +1,431 @@
+/* Reset some basic styles */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+img,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+a {
+    color: gray;
+}
+
+header {
+    background: gray;
+    color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    /* Full height of the viewport */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    /* Initially hidden */
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the entire container */
+
+}
+
+.centered-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: gray;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.about-us .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us .about-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.about-us .about-text {
+    max-width: 500px;
+}
+
+.about-us .about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.about-us .about-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.about-us .btn {
+    padding: 10px 20px;
+    background: gray;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: gray;
+}
+
+.services .service-grid {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services .service-item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.services .service-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.services .service-item h3 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+    color: gray;
+}
+
+.services .service-item p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: gray;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio .btn {
+    padding: 10px 20px;
+    background: gray;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Contact Us Page Styles */
+.contact-us {
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.contact-us p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333333;
+}
+
+.contact-info a {
+    color: gray;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form .form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: gray;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ffffff;
+    color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: gray;
+}
+
+.testimonials .testimonial-item p {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonial-item h4 {
+    font-size: 20px;
+    color: gray;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: gray;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: gray;
+}
+
+/* Footer */
+footer {
+    background: gray;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+}
+
+footer .contact-info p,
+footer .social-media a {
+    color: #ffffff;
+}

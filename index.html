@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Photography Co.</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="slideshow-container">
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="image/familyphoto.jpeg" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <img src="image/Picture1HoldingHands.jpeg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="image/picture2.jpeg" alt="Slide 3">
+            </div>
+        </div>
+        <div class="centered-button">
+            <a href="portfolio.html" class="btn">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="content">
+            <div class="about-image">
+                <img src="image/photoLogo.png" alt="About Us">
+            </div>
+            <div class="about-text">
+                <h2>Who We Are</h2>
+                <p>We are a professional photography company dedicated to capturing your special moments with precision
+                    and creativity.</p>
+                <a href="aboutus.html" class="btn">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="image/familyphoto.jpeg" alt="Portrait Photography">
+                <h3>Portrait Photography</h3>
+                <p>Beautiful and timeless portraits for all occasions.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-item">
+                <img src="image/Picture1HoldingHands.jpeg" alt="Wedding Photography">
+                <h3>Wedding Photography</h3>
+                <p>Capture the magic of your special day.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-item">
+                <img src="image/graduation.jpeg" alt="Event Photography">
+                <h3>Event Photography</h3>
+                <p>Documenting your events with professional precision.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Our Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="image/graduation.jpeg" alt="Work 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="image/picture2.jpeg" alt="Work 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="image/Picture1HoldingHands.jpeg" alt="Work 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="image/familyphoto.jpeg" alt="Work 4">
+            </div>
+        </div>
+        <a href="portfolio.html" class="btn">Explore Our Portfolio</a>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-item">
+            <p>"The best photography experience we’ve ever had! The photos were stunning, and the service was
+                exceptional. Highly recommend for graduation photography"</p>
+            <h4>- Deven</h4>
+        </div>
+        <div class="testimonial-item">
+            <p>"We couldn’t be happier with our wedding photos. The team captured every moment perfectly."</p>
+            <h4>- Stacey</h4>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>123 Photography St, Suite 100<br>City, State, ZIP</p>
+                <p>Email: info@photographyco.com<br>Phone: (123) 456-7890</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+</body>
+
+</html>
